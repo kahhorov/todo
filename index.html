@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tolo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <label for="text"
+          ><span>Text</span>
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Full Name"
+            autocomplete="off"
+          />
+        </label>
+        <label
+          style="
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+          "
+        >
+          <button>Add</button>
+        </label>
+      </form>
+      <ul class="list">
+        <div class="title">
+          <span style="border: 0; width: 15%">T/r</span>
+          <span>Text</span>
+        </div>
+        <div class="wrapper"></div>
+      </ul>
+    </div>
+    <div class="toast">
+      <button class="toastCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+      <h4>
+        <i class="fa-solid fa-triangle-exclamation"></i
+        ><span>Barcha maydonni to'ldring!</span>
+      </h4>
+      <div class="err-time-wrapper"></div>
+      <div class="time"></div>
+    </div>
+
+    <div class="sucsess-toast">
+      <button class="sucsess-btn"><i class="fa-solid fa-xmark"></i></button>
+      <h4>
+        <i class="fa-solid fa-circle-check"></i
+        ><span>User muvaffaqiyatli qo'shildi!</span>
+      </h4>
+      <div class="sucsess-time-wrapper"></div>
+      <div class="sucsess-time"></div>
+    </div>
+    <div class="overlay hidden">
+      <div class="modal">
+        <form class="inpBox">
+          <input
+            type="text"
+            name="text"
+            class="editeInp"
+            placeholder="Full Name"
+            id="textModal"
+          />
+          <button class="saqlash">Saqlash</button>
+        </form>
+        <div class="wrapperBtns">
+          <button class="bekor">Bekor Qilish</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
